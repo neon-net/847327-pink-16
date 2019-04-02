@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк(Форма)</title>
+    <base href="https://htmlacademy-adaptive.github.io/847327-pink-16/2/">
+</head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">pink</a>
+      <button class="page-header__button">развернуть меню</button>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item"><a href="#">Главная</a></li>
+          <li class="site-list__item"><a href="#">Фотографии</a></li>
+          <li class="site-list__item"><a>Конкурс</a></li>
+          <li class="site-list__item"><a href="#">Html academy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-title">
+        <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
+      <section class="form">
+        <p class="form__message">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="user-name">
+            <label class="user-name__label" for="surname">Фамилия:</label>
+            <input class="user-name__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
+            <label class="user-name__label" for="name">Имя:</label>
+            <input class="user-name__field" type="text" name="name"  id="name" placeholder="Введите ваше имя *">
+            <label class="user-name__label" for="patronymic">Отчество:</label>
+            <input class="user-name__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="user-trips">
+            <legend class="user-trips__legend">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="user-trips__list">
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="shark" id="shark" checked>
+                  Сделал селфи с акулой
+                </label>
+              </li>
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="burn" id="burn" checked>
+                  Обгорел на пляже
+                </label>
+              </li>
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="norris" id="norris">
+                  Видел Чака Норриса
+                </label>
+              </li>
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="souvenirs" id="souvenirs">
+                  Накупил сувениров
+                </label>
+              </li>
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="tower" id="tower" checked>
+                  Удержал башню
+                </label>
+              </li>
+              <li class="user-trips__item">
+                <label class="user-trips__label">
+                  <input class="user-trips__input" type="checkbox" name="crash" id="crash">
+                  Разгромил отель
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="user-contacts">
+            <ul class="user-contacts__list">
+              <li class="user-contacts__item">
+                <label class="user-contacts__label" for="tel">Номер телефона</label>
+                <input class="user-contacts__field" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="user-contacts__item">
+                <label class="user-contacts__label" for="email">Адрес почты</label>
+                <input class="user-contacts__field" type="email" name="email" id="email" placeholder="Введите почту *">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="user-app">
+            <legend class="user-app__legend">С каким приложением путешествовали?</legend>
+            <ul class="user-app__list">
+              <li class="user-app__item">
+                <label class="user-app__label">
+                  <input class="user-app__input" type="radio" name="app-source" id="ios" checked>
+                  Pink для iOS
+                </label>
+              </li>
+              <li class="user-app__item">
+                <label class="user-app__label">
+                  <input class="user-app__input" type="radio" name="app-source" id="android">
+                  Pink на Android
+                </label>
+              </li>
+              <li class="user-app__item">
+                <label class="user-app__label">
+                  <input class="user-app__input" type="radio" name="app-source" id="windows-phone">
+                  Windows Phone
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="user-emotions">
+            <label class="user-emotions__label" for="emotions">Опишите свои эмоции</label>
+            <textarea class="user-emotions__textarea" name="emo" id="emo" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <button class="submit-button" type="submit">Отправить форму</button>
+        </form>
+        <small class="required-message">
+          <span class="required-message__mark">*</span>
+          - обязательные поля
+        </small>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-img" src="http://placehold.it/150x100" alt="Логотип" width="" height="">
+      </a>
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-tw"><a href="#" aria-label="twitter"></a></li>
+        <li class="page-footer__social-fb"><a href="#" aria-label="facebook"></a></li>
+        <li class="page-footer__social-pm"><a href="#" aria-label="play-market"></a></li>
+      </ul>
+      <div class="developers">
+        <p class="developers__text">Разработано</p>
+        <a class="developers__link">
+          <img class="developers__img" src="http://placehold.it/150x100" alt="логотип разработчиков" width="" height="">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
