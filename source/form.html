@@ -26,48 +26,48 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="user-name">
             <label class="user-name__label" for="surname">Фамилия:</label>
-            <input class="user-name__field" type="text" name="surname" placeholder="Укажите фамилию *">
+            <input class="user-name__field" type="text" name="surname" id="surname" placeholder="Укажите фамилию *">
             <label class="user-name__label" for="name">Имя:</label>
-            <input class="user-name__field" type="text" name="name" placeholder="Введите ваше имя *">
+            <input class="user-name__field" type="text" name="name"  id="name" placeholder="Введите ваше имя *">
             <label class="user-name__label" for="patronymic">Отчество:</label>
-            <input class="user-name__field" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+            <input class="user-name__field" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
           </fieldset>
           <fieldset class="user-trips">
             <legend class="user-trips__legend">Ваши безбашенные достижения в путешествии</legend>
             <ul class="user-trips__list">
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="shark" checked>
+                  <input class="user-trips__input" type="checkbox" name="shark" id="shark" checked>
                   Сделал селфи с акулой
                 </label>
               </li>
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="burn" checked>
+                  <input class="user-trips__input" type="checkbox" name="burn" id="burn" checked>
                   Обгорел на пляже
                 </label>
               </li>
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="norris">
+                  <input class="user-trips__input" type="checkbox" name="norris" id="norris">
                   Видел Чака Норриса
                 </label>
               </li>
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="souvenirs">
+                  <input class="user-trips__input" type="checkbox" name="souvenirs" id="souvenirs">
                   Накупил сувениров
                 </label>
               </li>
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="tower" checked>
+                  <input class="user-trips__input" type="checkbox" name="tower" id="tower" checked>
                   Удержал башню
                 </label>
               </li>
               <li class="user-trips__item">
                 <label class="user-trips__label">
-                  <input class="user-trips__input" type="checkbox" name="crash">
+                  <input class="user-trips__input" type="checkbox" name="crash" id="crash">
                   Разгромил отель
                 </label>
               </li>
@@ -77,11 +77,11 @@
             <ul class="user-contacts__list">
               <li class="user-contacts__item">
                 <label class="user-contacts__label" for="tel">Номер телефона</label>
-                <input class="user-contacts__field" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                <input class="user-contacts__field" type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
               </li>
               <li class="user-contacts__item">
                 <label class="user-contacts__label" for="email">Адрес почты</label>
-                <input class="user-contacts__field" type="email" name="email" placeholder="Введите почту *">
+                <input class="user-contacts__field" type="email" name="email" id="email" placeholder="Введите почту *">
               </li>
             </ul>
           </fieldset>
@@ -90,19 +90,19 @@
             <ul class="user-app__list">
               <li class="user-app__item">
                 <label class="user-app__label">
-                  <input class="user-app__input" type="radio" name="app-source" checked>
+                  <input class="user-app__input" type="radio" name="app-source" id="ios" checked>
                   Pink для iOS
                 </label>
               </li>
               <li class="user-app__item">
                 <label class="user-app__label">
-                  <input class="user-app__input" type="radio" name="app-source">
+                  <input class="user-app__input" type="radio" name="app-source" id="android">
                   Pink на Android
                 </label>
               </li>
               <li class="user-app__item">
                 <label class="user-app__label">
-                  <input class="user-app__input" type="radio" name="app-source">
+                  <input class="user-app__input" type="radio" name="app-source" id="windows-phone">
                   Windows Phone
                 </label>
               </li>
@@ -110,7 +110,7 @@
           </fieldset>
           <div class="user-emotions">
             <label class="user-emotions__label" for="emotions">Опишите свои эмоции</label>
-            <textarea class="user-emotions__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="user-emotions__textarea" name="emo" id="emo" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <button class="submit-button" type="submit">Отправить форму</button>
         </form>
