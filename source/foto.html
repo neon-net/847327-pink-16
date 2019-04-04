@@ -92,20 +92,22 @@
         <p class="fotogallery__message-bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="filter">
-        <h2 class="visually-hidden">Фильтр для фотографии</h2>
-        <img class="filter__img" src="http://placehold.it/150x100" alt="фотография в фильтре" width="" height="">
-        <ul class="filter__list">
-          <li class="filter__list-clip"><svg></svg></li>
-          <li class="filter__list-fill"><svg></svg></li>
-          <li class="filter__list-contrast"><svg></svg></li>
-        </ul>
-        <div class="filter__scale">
-          <div class="filter__toggle"></div>
-        </div>
-        <div class="share-buttons">
-          <a class="share-buttons__post">Запостить</a>
-          <button class="share-buttons__abort" type="button">Отмена</button>
-        </div>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="visually-hidden">Фильтр для фотографии</h2>
+          <img class="filter__img" src="http://placehold.it/150x100" alt="фотография в фильтре" width="" height="">
+          <div class="filter__list">
+            <button class="filter__list-clip"></button>
+            <button class="filter__list-fill"></button>
+            <button class="filter__list-contrast"></button>
+          </div>
+          <div class="filter__scale">
+            <input class="filter__toggle" type="range">
+          </div>
+          <div class="share-buttons">
+            <button class="share-buttons__post" type="submit">Запостить</button>
+            <button class="share-buttons__abort" type="reset">Отмена</button>
+          </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer">
