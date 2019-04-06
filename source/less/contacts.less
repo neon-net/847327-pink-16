@@ -1,0 +1,37 @@
+.contacts {
+  font-size: 24px;
+  color: @base-color;
+  text-align: center;
+}
+
+.contacts__message {
+  margin: 0;
+}
+
+.contacts__list {
+  .ls-reset();
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contacts__tel,
+.contacts__email,
+.contacts__address {
+  color: @pink-color;
+  text-decoration: none;
+}
+
+.contacts__tel,
+.contacts__email {
+  &:hover {
+    color: @base-color;
+    text-decoration: underline;
+  }
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+}

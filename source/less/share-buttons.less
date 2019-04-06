@@ -1,0 +1,50 @@
+.share-buttons {
+}
+
+.share-buttons__post,
+.share-buttons__abort {
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  background-color: transparent;
+  border: solid 3px;
+  border-radius: 5px;
+}
+
+.share-buttons__post {
+  color: @pink-color;
+
+  border-color: @pink-color;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: @pink-color;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: @pink-color;
+  }
+}
+
+.share-buttons__abort {
+  color: rgba(40, 54, 69, 0.1);
+
+  border-color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    color: rgba(40, 54, 69, 0.3);
+
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+}
