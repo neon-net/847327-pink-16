@@ -1,3 +1,8 @@
+.questions__container {
+  width: 280px;
+  padding: 0 20px;
+}
+
 .questions__text {
   margin: 0;
 
@@ -5,4 +10,18 @@
   font-size: 24px;
   color: @base-color;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .questions__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .questions__container {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

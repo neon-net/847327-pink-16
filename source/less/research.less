@@ -1,0 +1,27 @@
+.research {
+  display: none;
+}
+
+.research__container {
+  width: 280px;
+  padding: 0 20px;
+  min-height: 755px; /* Временно для сетки */
+
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__container {
+    width: 620px;
+    padding: 0 20px;
+    min-height: 380px; /* Временно для сетки */
+  }
+
+  .research__description {
+    width: 310px;
+  }
+}

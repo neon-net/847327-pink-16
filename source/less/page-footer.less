@@ -1,3 +1,8 @@
+.page-footer__container {
+  width: 280px;
+  padding: 0 20px;
+}
+
 .page-footer__social-list {
   .ls-reset();
 }
@@ -25,4 +30,20 @@
   font-size: 14px;
   line-height: 18px;
   color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    width: 960px;
+    padding: 0 120px;
+  }
 }

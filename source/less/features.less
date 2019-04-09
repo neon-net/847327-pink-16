@@ -9,6 +9,14 @@
   background-repeat: no-repeat;
 }
 
+.features__container {
+  width: 280px;
+  padding: 0 20px;
+  min-height: 755px; /* Временно для сетки */
+
+  outline: 2px dashed red;
+}
+
 .features__list {
   .ls-reset();
 }
@@ -17,4 +25,39 @@
   font-size: 14px;
   line-height: 24px;
   color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .features__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 620px;
+    padding: 0 20px;
+    min-height: 435px; /* Временно для сетки */
+  }
+
+  .features__list {
+    width: 310px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__container {
+    display: block;
+    width: 960px;
+    padding: 0 120px;
+    min-height: 500px; /* Временно для сетки */
+  }
+
+  .features__list {
+    display: flex;
+    width: 960px;
+    text-align: center;
+  }
+
+  .features__list-item {
+    width: 300px;
+  }
 }
