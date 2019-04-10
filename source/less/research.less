@@ -4,6 +4,7 @@
 
 .research__container {
   width: 280px;
+  margin: 0 auto;
   padding: 0 20px;
   min-height: 755px; /* Временно для сетки */
 
@@ -20,8 +21,16 @@
     padding: 0 20px;
     min-height: 380px; /* Временно для сетки */
   }
+}
 
-  .research__description {
-    width: 310px;
+@media (min-width: @desktop-width) {
+  .research {
+    background-color: #f2f2f2;
+  }
+
+  .research__container {
+    width: 940px;
+    padding: 0 10px;
+    min-height: 420px; /* Временно для сетки */
   }
 }

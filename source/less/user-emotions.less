@@ -1,3 +1,7 @@
+.user-emotions {
+  order: 5;
+}
+
 .user-emotions__label {
   font-size: 14px;
   line-height: 30px;
@@ -6,8 +10,15 @@
   text-transform: uppercase;
 }
 
-.user-emotions__textarea,
-.user-emotions__textarea::placeholder {
+.user-emotions__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.user-emotions__textarea {
+  width: 276px;
+  min-height: 196px;
   padding: 0;
 
   font-family: inherit;
@@ -16,4 +27,22 @@
   color: @base-color;
 
   border: solid 2px #e5e5e5;
+}
+
+.user-emotions__textarea::placeholder {
+  color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .user-emotions__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .user-emotions__textarea {
+    width: 496px;
+  }
 }

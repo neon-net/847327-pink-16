@@ -1,5 +1,15 @@
 .user-name {
+  order: 0;
+  margin: 0;
+  padding: 0;
+
   border: none;
+}
+
+.user-name__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .user-name__label {
@@ -9,8 +19,10 @@
   text-transform: uppercase;
 }
 
-.user-name__field,
-.user-name__field::placeholder {
+.user-name__surname,
+.user-name__name,
+.user-name__patronymic {
+  width: 276px;
   padding: 0;
 
   font-family: inherit;
@@ -20,3 +32,38 @@
 
   border: solid 2px #e5e5e5;
 }
+
+.user-name__surname::placeholder,
+.user-name__name::placeholder,
+.user-name__patronymic::placeholder {
+  color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .user-name__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .user-name__surname {
+    width: 521px;
+  }
+
+  .user-name__name {
+    width: 561px;
+  }
+
+  .user-name__patronymic {
+    width: 521px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .user-name__container {
+    width: 470px;
+    padding: 0;
+  }
+}
+
