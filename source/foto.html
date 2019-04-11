@@ -119,19 +119,27 @@
       </section>
       <section class="filter">
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="visually-hidden">Фильтр для фотографии</h2>
-          <img class="filter__img" src="http://placehold.it/150x100" alt="фотография в фильтре" width="" height="">
-          <div class="filter__list">
-            <button class="filter__list-clip"></button>
-            <button class="filter__list-fill"></button>
-            <button class="filter__list-contrast"></button>
-          </div>
-          <div class="filter__scale">
-            <input class="filter__toggle" type="range">
-          </div>
-          <div class="share-buttons">
-            <button class="share-buttons__post" type="submit">Запостить</button>
-            <button class="share-buttons__abort" type="reset">Отмена</button>
+          <div class="filter__container">
+            <h2 class="visually-hidden">Фильтр для фотографии</h2>
+            <img class="filter__img" src="http://placehold.it/150x100" alt="фотография в фильтре" width="" height="">
+            <ul class="filter__list">
+              <li class="filter__list-item">
+                <button class="filter__list-clip"></button>
+                <input class="filter__toggle" type="range">
+              </li>
+              <li class="filter__list-item">
+                <button class="filter__list-fill"></button>
+                <input class="filter__toggle" type="range">
+              </li>
+              <li class="filter__list-item">
+                <button class="filter__list-contrast"></button>
+                <input class="filter__toggle" type="range">
+              </li>
+            </ul>
+            <div class="share-buttons">
+              <button class="share-buttons__post" type="submit">Запостить</button>
+              <button class="share-buttons__abort" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>

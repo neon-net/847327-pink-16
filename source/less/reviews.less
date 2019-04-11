@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.reviews__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .reviews__author-name {
   font-style: normal;
 }
@@ -15,4 +21,19 @@
   font-size: 14px;
   line-height: 30px;
   color: @base-color;
+}
+
+
+@media (min-width: @tablet-width) {
+  .reviews__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__container {
+    width: 940px;
+    padding: 0 10px;
+  }
 }

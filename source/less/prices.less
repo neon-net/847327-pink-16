@@ -6,6 +6,12 @@
   text-align: center;
 }
 
+.prices__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .prices__name {
   font-weight: 700;
 
@@ -20,4 +26,18 @@
 .prices__specification {
   color: @base-color;
   font-size: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .prices__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .prices__container {
+    width: 940px;
+    padding: 0 10px;
+  }
 }
