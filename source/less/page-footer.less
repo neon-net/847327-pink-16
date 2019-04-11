@@ -33,12 +33,20 @@
   color: @base-color;
 }
 
+.page-footer--index {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer__container {
     display: flex;
     justify-content: space-between;
     width: 620px;
     padding: 0 20px;
+  }
+
+  .page-footer--index {
+    display: flex;
   }
 }
 
