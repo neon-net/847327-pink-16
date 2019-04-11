@@ -5,8 +5,17 @@
   text-align: center;
 
   background-color: #f2f2f2;
+}
+
+.features__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 755px; /* Временно для сетки */
+
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
+  outline: 2px dashed red;
 }
 
 .features__list {
@@ -17,4 +26,39 @@
   font-size: 14px;
   line-height: 24px;
   color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .features__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 620px;
+    padding: 0 20px;
+    min-height: 435px; /* Временно для сетки */
+  }
+
+  .features__list {
+    width: 310px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__container {
+    display: block;
+    width: 940px;
+    padding: 0 10px;
+    min-height: 500px; /* Временно для сетки */
+  }
+
+  .features__list {
+    display: flex;
+    width: 960px;
+    text-align: center;
+  }
+
+  .features__list-item {
+    width: 300px;
+  }
 }

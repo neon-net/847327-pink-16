@@ -4,6 +4,12 @@
   color: @base-color;
 }
 
+.fotogallery__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .fotogallery__message {
   margin: 0;
 
@@ -47,4 +53,44 @@
 
   background-color: transparent;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .fotogallery__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .fotogallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fotogallery__list-item {
+    width: 300px;
+  }
+
+  .fotogallery__list-item:first-child {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fotogallery__container {
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .fotogallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fotogallery__list-item {
+    width: 300px;
+  }
+
+  .fotogallery__list-item:first-child {
+    width: 960px;
+  }
 }

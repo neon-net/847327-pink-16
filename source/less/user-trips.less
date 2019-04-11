@@ -1,6 +1,16 @@
 .user-trips {
+  order: 4;
+  margin: 0;
+  padding: 0;
+
   background-color: #f2f2f2;
   border: none;
+}
+
+.user-trips__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .user-trips__legend {
@@ -19,4 +29,34 @@
   font-size: 18px;
   line-height: 30px;
   color: @base-color;
+}
+
+@media (min-width: @tablet-width) {
+  .user-trips {
+    background-color: #ffffff;
+  }
+
+  .user-trips__container {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-trips__container {
+    width: 940px;
+    padding: 0;
+  }
+
+  .user-trips__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 228px;
+  }
+
+  .user-trips__item {
+    min-height: 80px; /*временно для сеток*/
+  }
 }

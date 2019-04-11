@@ -1,3 +1,9 @@
+.page-footer__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .page-footer__social-list {
   .ls-reset();
 }
@@ -25,4 +31,28 @@
   font-size: 14px;
   line-height: 18px;
   color: @base-color;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .page-footer--index {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__container {
+    width: 940px;
+    padding: 0 10px;
+  }
 }

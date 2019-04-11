@@ -1,8 +1,83 @@
-.form__message {
+.form__top-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__bottom-container {
+  order: 6;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__message1,
+.form__message2 {
   margin: 0;
 
   font-size: 14px;
   line-height: 30px;
   color: @base-color;
   text-align: center;
+}
+
+.form__message2 {
+  display: none;
+}
+
+.form__button {
+  .form-buttons();
+}
+
+.form__required-message {
+  display: block;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: @base-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__required-mark {
+  color: @pink-color;
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__top-container {
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  .form__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .form__top-container {
+    width: 940px;
+    padding: 0 10px;
+  }
+
+  .form__bottom-container {
+    width: 940px;
+    padding: 0 10px;
+  }
 }
